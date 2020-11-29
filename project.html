@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <!-- <link rel="stylesheet" href="../Bootstrap 4/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="../Bootstrap 4/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../Bootstrap 4/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+</head>
+<style>
+    .example {
+        border: 2px solid darkcyan;
+        box-shadow: 4px;
+        border-radius: 20px;
+        padding: 30px;
+    }
+    
+    kbd {
+        background-color: #eee;
+        border-radius: 3px;
+        border: 1px solid #b4b4b4;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, .2), 0 2px 0 0 rgba(255, 255, 255, .7) inset;
+        color: #333;
+        display: inline-block;
+        font-size: .85em;
+        font-weight: 700;
+        line-height: 1;
+        padding: 2px 4px;
+        white-space: nowrap;
+    }
+    
+    .round-button {
+        width: 8%;
+        position: relative;
+        left: 46%;
+        margin: 40px 0 0 0;
+    }
+    
+    .round-button-circle {
+        width: 110%;
+        height: 0;
+        padding-bottom: 100%;
+        border-radius: 50%;
+        border: 10px solid #cfdcec;
+        overflow: hidden;
+        background: #4679BD;
+        box-shadow: 0 0 3px gray;
+    }
+    
+    .round-button-circle:hover {
+        background: #30588e;
+    }
+    
+    .round-button a {
+        display: block;
+        float: left;
+        width: 100%;
+        padding-top: 52%;
+        padding-bottom: 50%;
+        line-height: 1em;
+        margin-top: -0.5em;
+        text-align: center;
+        color: #e2eaf3;
+        font-family: Verdana;
+        font-size: 1.2em;
+        font-weight: bold;
+        text-decoration: none;
+        position: relative;
+        left: 0%;
+    }
+</style>
+
+<body>
+    <div class="jumbotron text-center bg-info border border-danger">
+        <h1>My First Bootstrap Page</h1>
+        <p>Resize this responsive page to see the effect!</p>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="container example">
+                    <h3>Column 1</h3>
+                    <p><kbd>ctrl + c</kbd> for copying</br><kbd> ctrl + x </kbd> for cutting</br><kbd> ctrl + v </kbd> for pasting</br>
+                    </p>
+                </div>
+
+            </div>
+            <div class="col-sm-4">
+                <div class="container example">
+                    <h3>Column 2</h3>
+                    <p><kbd>ctrl + c</kbd> for copying</br><kbd> ctrl + x </kbd> for cutting</br><kbd> ctrl + v </kbd> for pasting</br>
+                    </p>
+                </div>
+
+            </div>
+            <div class="col-sm-4">
+                <div class="container example">
+                    <h3>Column 2</h3>
+                    <p><kbd>ctrl + c</kbd> for copying</br><kbd> ctrl + x </kbd> for cutting</br><kbd> ctrl + v </kbd> for pasting</br>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+        <button type="button" class="btn btn-secondary">1</button>
+        <button type="button" class="btn btn-secondary">2</button>
+      
+        <div class="btn-group" role="group">
+          <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Dropdown
+          </button>
+          <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+            <a class="dropdown-item" href="#">Dropdown link</a>
+            <a class="dropdown-item" href="#">Dropdown link</a>
+          </div>
+        </div>
+    </div>
+    <div class="round-button">
+        <div class="round-button-circle">
+            <a href="#" class="round-button">Button</a>
+        </div>
+    </div>
+    <!-- <button id="my_id">CLick</button> -->
+    <script>
+        $("#my_id").click(function() {
+            $(this).css('backgroundColor', 'red')
+        });
+
+        $("#my_id").dblclick(function() {
+            $(this).css('backgroundColor', 'green')
+        });
+    </script>
+</body>
+
+</html>

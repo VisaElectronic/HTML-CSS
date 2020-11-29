@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="frontend01.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../Bootstrap 4/css/bootstrap-grid.min.css">
+</head>
+
+<body>
+    <p id="rCorners4"></p>
+    <ul class="button">
+        <li class="button"><a class="active" href="#home">Home</a></li>
+        <li class="button"><a href="#aboutUs">About Us</a></li>
+        <li class="button"><a href="#laptop">Laptop</a></li>
+        <li class="button"><a href="#pcComponents">PC Components</a></li>
+        <li class="button"><a href="#projector">Projector</a></li>
+        <li class="button"><a href="#phone">Phone</a></li>
+        <li class="button"><a href="#desktop">Desktops</a></li>
+        <li class="button"><a href="#accessories">Accessories</a></li>
+    </ul>
+    </br>
+    <div class="breadcrumb">
+        <ul class="breadcrumb">
+            <li class="breadcrumb first-crumb"><a href="#"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+            <li class="breadcrumb"><a href="#">Laptop</a></li>
+            <li class="breadcrumb last-crumb"><a href="#">Asus</a></li>
+        </ul>
+    </div>
+    </br>
+    <div>
+        <h1>Refine Search</h1>
+        <ul>
+            <li>ASUS New arrival</li>
+            <li>Dell</li>
+        </ul>
+    </div>
+    <button type="button" style="padding: 7.5px 12px;">
+        <i class="fa fa-th-list"></i>
+    </button>
+    <button type="button" style="padding: 7.5px 12px;">
+        <i class="fa fa-th"></i>
+    </button>
+    <div class="row">
+        <div class="column">
+            <div class="product"></div>
+            <div style="text-align: center;"><img src="/HTML-CSS/product.png" title="product"></div>
+            <ul class="list" style="list-style-type:none">
+                <h1 style="color: aqua;font-size: 20px;">Optix MAG322CQRV</h1>
+                <li>Panel Size:</li>
+                <li>Panel Resolution: 2560 x 1440 (WQHD) </li>
+                <li>Refresh Rate: 144Hz </li>
+                <li>Response time: 1ms</li>
+                <li>Panel Type: VA </li>
+                <li>Brightness (nits): 300 nits </li>
+                <li>Viewing Angle: 178° (H) / 178° (V)</li>
+            </ul>
+            <div style="position: absolute;left: 150px;">
+                <button type="button" class="btn" id="btn"><i class="fa fa-thumbs-up" id="like" style="font-size:15px;color:white"> Like</i></button>
+                <button type="button" class="btn"><i class = "fa" style="font-size:15px;color:white">Share</i></button>
+            </div>
+
+        </div>
+        <div class="column">
+            <h2>Column 2</h2>
+            <p>Some text..</p>
+        </div>
+        <div class="column">
+            <h2>Column 3</h2>
+            <p>Some text..</p>
+        </div>
+        <div class="column">
+            <h2>Column 3</h2>
+            <p>Some text..</p>
+        </div>
+    </div>
+    <script>
+        document.getElementById("btn").addEventListener("click", myFunction);
+        document.getElementById("btn").addEventListener("click", mySecondFunction);
+
+        function myFunction() {
+            document.getElementById("like").className = "fa";
+            document.getElementById("like").innerHTML = "1";
+        }
+
+        function mySecondFunction() {
+            document.getElementById("like").className = "fa fa-thumbs-up";
+            //document.getElementById("like").innerHTML = "hello";
+        }
+    </script>
+</body>
+
+</html>

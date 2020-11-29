@@ -1,0 +1,153 @@
+    * {
+        box-sizing: border-box;
+    }
+    /* p{
+    margin-left: 40px;
+} */
+    
+    .btn {
+        padding: 5px;
+        border-radius: 5px;
+        background-color: blue;
+        position: relative;
+    }
+    
+    ul.button {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: rgb(6, 6, 173);
+    }
+    
+    li.button {
+        float: left;
+    }
+    
+    li.button a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    
+    li.button a:hover {
+        background-color: #111;
+    }
+    
+    #rCorners4 {
+        border-radius: 15px;
+        background: #ccc;
+        padding: 20px;
+        /* width: 100%; */
+        height: 150px;
+    }
+    
+    ul.breadcrumb {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #ccc;
+        border-radius: 5px;
+    }
+    
+    li.breadcrumb:before {
+        content: '';
+        width: 28.2px;
+        /* sqrt(40*40 / 2) */
+        height: 28.2px;
+        background: transparent;
+        position: absolute;
+        -moz-transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+        transform-origin: top right;
+        top: 20px;
+        margin: 0;
+        right: 0;
+        border-right: rgb(153, 149, 149) solid 1px;
+        border-top: rgb(153, 149, 149) solid 1px;
+    }
+    
+    li.breadcrumb:after {
+        content: "";
+        display: inline-block;
+        width: 0;
+        height: 0;
+        border-top: 20px solid #ccc;
+        border-bottom: 20px solid #ccc;
+        border-left: 20px solid #ccc;
+    }
+    
+    li.first-crumb:after {
+        border-top: 20px solid #ccc;
+        border-bottom: 20px solid #ccc;
+        border-left: 20px solid #ccc;
+    }
+    
+    li.last-crumb:after {
+        border-top: 20px solid #ccc;
+        border-bottom: 20px solid #ccc;
+        border-left: 20px solid #ccc;
+    }
+    
+    li.breadcrumb {
+        list-style-type: none;
+        background-color: #ccc;
+        /* display: inline-block; */
+        float: left;
+        line-height: 0;
+        position: relative;
+        height: 40px;
+    }
+    
+    li.first-crumb {
+        background: #ccc;
+    }
+    
+    li.last-crumb {
+        background: #ccc;
+    }
+    
+    li.breadcrumb a {
+        padding: 14px 16px;
+        position: relative;
+        text-decoration: none;
+        top: -15px;
+    }
+    
+    ul.list>li {
+        color: rgb(153, 149, 149);
+    }
+    
+    ul.list {
+        position: relative;
+    }
+    /* Create three equal columns that floats next to each other */
+    
+    .column {
+        float: left;
+        width: 22.222%;
+        padding: 1px;
+        height: 500px;
+        /* Should be removed. Only for demonstration */
+        border-style: solid;
+        border-color: rgb(153, 149, 149);
+        border-width: thin;
+        margin: 15px;
+    }
+    
+    .row {
+        margin: 10px;
+        display: flex;
+        justify-content: center;
+    }
+    /* Clear floats after the columns */
+    
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
